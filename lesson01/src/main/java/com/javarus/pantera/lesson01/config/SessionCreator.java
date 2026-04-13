@@ -7,10 +7,12 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy;
 import org.hibernate.cfg.Configuration;
+import org.springframework.stereotype.Component;
 
 import java.io.Closeable;
 import java.util.concurrent.atomic.AtomicInteger;
 
+@Component
 @ToString
 public class SessionCreator implements Closeable {
 
