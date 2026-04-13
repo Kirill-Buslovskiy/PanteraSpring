@@ -2,6 +2,7 @@ package com.javarus.pantera.lesson01.config;
 
 
 import lombok.SneakyThrows;
+import lombok.ToString;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy;
@@ -10,6 +11,7 @@ import org.hibernate.cfg.Configuration;
 import java.io.Closeable;
 import java.util.concurrent.atomic.AtomicInteger;
 
+@ToString
 public class SessionCreator implements Closeable {
 
     private final SessionFactory sessionFactory;

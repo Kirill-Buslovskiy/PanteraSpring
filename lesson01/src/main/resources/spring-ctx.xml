@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="com.javarus.pantera.lesson01.service.UserService"
+          id="userService">
+        <constructor-arg ref="userRepository"/>
+    </bean>
+    <bean class="com.javarus.pantera.lesson01.repository.UserRepository"
+          id="userRepository">
+        <constructor-arg ref="sessionCreator"/>
+    </bean>
+    <bean class="com.javarus.pantera.lesson01.config.SessionCreator"
+          id="sessionCreator">
+        <constructor-arg ref="applicationProperties"/>
+    </bean>
+    <bean class="com.javarus.pantera.lesson01.config.ApplicationProperties"
+          id="applicationProperties"/>
+
+</beans>

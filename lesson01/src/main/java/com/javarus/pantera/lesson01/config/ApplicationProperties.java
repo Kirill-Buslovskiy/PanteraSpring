@@ -1,6 +1,7 @@
 package com.javarus.pantera.lesson01.config;
 
 import lombok.SneakyThrows;
+import lombok.ToString;
 
 import java.io.FileReader;
 import java.net.URI;
@@ -10,6 +11,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Properties;
 
+@ToString
 public class ApplicationProperties extends Properties {
 
     public static final String HIBERNATE_CONNECTION_URL = "hibernate.connection.url";
