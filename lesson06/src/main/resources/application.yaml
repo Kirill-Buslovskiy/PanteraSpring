@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: lesson04
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/game}
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:postgres}
+pantera:
+  jpa:
+    try-count: 42
+    array: 1,2,4,8,16
+    set: one,two,three,four,five
+    map:
+      1: one;
+      2: two;
+      3: three;
+      4: four;
