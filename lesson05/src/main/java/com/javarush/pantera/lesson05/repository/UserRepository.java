@@ -18,4 +18,6 @@ public interface UserRepository extends JpaRepository<User, Long> {
             @Param("role") String roleEquals //
     );
 
+    @Query("select u from User u where u.password like :password")
+    User findUserByPassword(@Param("password") String password);
 }

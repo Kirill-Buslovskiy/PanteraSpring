@@ -29,4 +29,8 @@ public class UserService {
                 //.map(udb -> udb) //for dto
                 .orElse(null);
     }
+
+    public User findUserByPassword(String password) {
+        return userRepository.findUserByPassword(password);
+    }
 }

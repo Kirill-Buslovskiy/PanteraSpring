@@ -18,6 +18,8 @@ public class Lesson05Application {
         System.out.println(appConfig);
         User admin = userService.findUserBy(3L, "USER");
         System.out.println(admin);
+        User userByPassword = userService.findUserByPassword("admin");
+        System.out.println(userByPassword);
     }
 
 
