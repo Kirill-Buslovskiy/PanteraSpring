@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: lesson04
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/distcomp}
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:postgres}
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.xml
+server:
+  port: 24110

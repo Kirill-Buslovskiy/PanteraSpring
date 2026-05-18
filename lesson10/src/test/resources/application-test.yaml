@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: Lesson10-test
+postgres:
+  container:
+    name: postgres:latest
