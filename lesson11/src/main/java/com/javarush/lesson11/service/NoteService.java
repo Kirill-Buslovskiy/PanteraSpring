@@ -8,11 +8,9 @@ import com.javarush.lesson11.model.story.Story;
 import com.javarush.lesson11.repository.NoteRepo;
 import com.javarush.lesson11.repository.StoryRepo;
 import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
 @AllArgsConstructor
 public class NoteService {
 
