@@ -1,12 +1,12 @@
 package com.javarush.lesson15.note;
 
+import com.javarush.lesson15.rest.mapper.NoteDto;
+import com.javarush.lesson15.rest.model.note.NoteIn;
+import com.javarush.lesson15.rest.model.note.NoteOut;
+import com.javarush.lesson15.rest.repository.StoryRepo;
 import com.javarush.lesson15.note.model.NoteEvent;
 import com.javarush.lesson15.note.model.NoteRequestTo;
 import com.javarush.lesson15.note.model.NoteResponseTo;
-import com.javarush.lesson11.model.note.NoteIn;
-import com.javarush.lesson11.model.note.NoteOut;
-import com.javarush.lesson11.repository.StoryRepo;
-import com.javarush.lesson11.mapper.NoteDto; // MapStruct Mapper
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
@@ -25,7 +25,7 @@ public class NoteService {
 
     public Flux<NoteOut> getAll() {
         NoteEvent noteEvent = new NoteEvent(NoteEvent.Operation.FIND_ALL);
-        
+
         return kafkaClient.sync(noteEvent)
                 .flatMapIterable(NoteEvent::noteResponseTos)
                 .map(this::mapToNoteOut);
@@ -91,16 +91,18 @@ public class NoteService {
 
     // Преобразование DTO из контроллера в DTO для Kafka
     private NoteRequestTo mapToRequestTo(NoteIn inputDto) {
-        return new NoteRequestTo(inputDto.getStoryId(), 
-                                 inputDto.getId(),
-                                 inputDto.getContent());
+        return new NoteRequestTo(
+                inputDto.getId(),
+                inputDto.getStoryId(),
+                inputDto.getContent());
     }
 
     // Преобразование DTO из Kafka в DTO для контроллера
     private NoteOut mapToNoteOut(NoteResponseTo responseTo) {
         // Здесь MapStruct не может быть использован напрямую, так как NoteDto работает с Note.
-        return new NoteOut(responseTo.id(), 
-                           responseTo.storyId(), 
-                           responseTo.content());
+        return new NoteOut(
+                responseTo.id(),
+                responseTo.storyId(),
+                responseTo.content());
     }
 }

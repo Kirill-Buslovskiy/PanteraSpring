@@ -1,53 +1,53 @@
-package com.javarush.lesson15.note;
+package com.javarush.lesson15.rest.controller;
 
-import com.javarush.lesson15.rest.model.note.NoteIn;
-import com.javarush.lesson15.rest.model.note.NoteOut;
+import com.javarush.lesson15.rest.model.tag.TagIn;
+import com.javarush.lesson15.rest.model.tag.TagOut;
+import com.javarush.lesson15.rest.service.TagService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-
 import java.util.NoSuchElementException;
 
 @RestController
-@RequestMapping("api/v1.0/notes")
-public class NoteController {
+@RequestMapping("api/v1.0/tags")
+public class TagController {
 
-    private final NoteService noteService;
+    private final TagService tagService;
 
-    public NoteController(NoteService noteService) {
-        this.noteService = noteService;
+    public TagController(TagService tagService) {
+        this.tagService = tagService;
     }
 
     @GetMapping
-    public Flux<NoteOut> getAll() {
-        return noteService.getAll();
+    public Flux<TagOut> getAll() {
+        return tagService.getAll();
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Mono<NoteOut> create(@RequestBody @Valid NoteIn inputDto) {
-        return noteService.create(inputDto);
+    public Mono<TagOut> create(@RequestBody @Valid TagIn inputDto) {
+        return tagService.create(inputDto);
     }
 
     @PutMapping
     @ResponseStatus(HttpStatus.OK)
-    public Mono<NoteOut> update(@RequestBody @Valid NoteIn inputDto) {
-        return noteService.update(inputDto)
+    public Mono<TagOut> update(@RequestBody @Valid TagIn inputDto) {
+        return tagService.update(inputDto)
                 .onErrorMap(NoSuchElementException.class, e -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
 
     @GetMapping("/{id}")
-    public Mono<NoteOut> read(@PathVariable long id) {
-        return noteService.get(id)
+    public Mono<TagOut> read(@PathVariable long id) {
+        return tagService.get(id)
                 .onErrorMap(NoSuchElementException.class, e -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public Mono<Void> delete(@PathVariable long id) {
-        return noteService.delete(id);
+        return tagService.delete(id);
     }
 }
