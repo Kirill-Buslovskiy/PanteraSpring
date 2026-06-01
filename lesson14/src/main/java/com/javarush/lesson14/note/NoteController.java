@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Locale;
+import java.util.NoSuchElementException;
 
 @RestController
 @RequestMapping("/api/v1.0/notes")
@@ -47,6 +48,8 @@ public class NoteController {
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable("id") Long id) {
-        noteService.removeById(id);
+        if (!noteService.removeById(id)){
+            throw new NoSuchElementException("id not found");
+        }
     }
 }
