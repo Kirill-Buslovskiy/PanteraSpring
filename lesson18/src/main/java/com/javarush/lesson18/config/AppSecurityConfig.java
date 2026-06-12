@@ -28,7 +28,7 @@ public class AppSecurityConfig {
     @Order(SecurityProperties.BASIC_AUTH_ORDER)
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
         http
-                .csrf(AbstractHttpConfigurer::disable) //see userpage.html
+                //.csrf(AbstractHttpConfigurer::disable) //see userpage.html
                 .authorizeHttpRequests(requests -> requests
                         //
                         .requestMatchers("/login", "/logout", "/signup")

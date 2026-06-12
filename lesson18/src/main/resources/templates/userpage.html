@@ -8,6 +8,9 @@
     <span th:insert="~{fragments::menu}"></span>
 
     <form method="post" class="form-horizontal">
+        <!-- get from CsrfControllerAdvice -->
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+
         <fieldset>
 
             <!-- Form Name -->
