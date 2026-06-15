@@ -9,7 +9,7 @@
 
     <form method="post" class="form-horizontal">
         <!-- get from CsrfControllerAdvice -->
-        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+<!--        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />-->
 
         <fieldset>
 
@@ -77,9 +77,6 @@
 
     <p><br><a href="/users" th:text="#{user_page.reset_link}">Reset</a></p>
 
-    <pre th:text="${#vars}"></pre>
-    <p th:text="${#vars['users']}"></p>
-    <p th:text="${#vars['_csrf']}"></p>
     <div th:insert="~{fragments::footer}">
         Footer
     </div>
