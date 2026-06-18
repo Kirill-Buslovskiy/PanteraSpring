@@ -17,8 +17,8 @@ spring:
             user-name-attribute: preferred_username
         registration:
           keycloak:
-            client-id: app-pantera
-            client-secret: GhwNRTCAERh25eK04bkyK5UpBPmES9Q7
+            client-id: app-edit-user
+            client-secret: FZgcObX5yWkDIudxdboYcZrK83bS6WGk
             redirect-uri: http://localhost:8080/login/oauth2/code/keycloak
             scope:
               - openid
