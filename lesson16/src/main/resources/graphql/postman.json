@@ -1,0 +1,160 @@
+{
+  "info": {
+    "_postman_id": "d3b923bc-1325-472b-aad1-e16ffbe46242",
+    "name": "Lesson15+16 GraphQL",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "200994"
+  },
+  "item": [
+    {
+      "name": "all",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "graphql",
+          "graphql": {
+            "query": "query AllEditors {\n  allEditors {\n    id\n    login\n    firstname\n  }\n}",
+            "variables": ""
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/graphql",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "graphql"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get by id",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "graphql",
+          "graphql": {
+            "query": "query GetEditorBySpecificId($currentId: ID!) {\n  editorById(id: $currentId) {\n    id\n    login\n    firstname\n  }\n}",
+            "variables": "{\n    \"currentId\": 99\n}"
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/graphql",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "graphql"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "graphql",
+          "graphql": {
+            "query": "mutation CreateNewEditor($inputData: EditorInput!) {\n  createEditor(input: $inputData) {\n    id\n    login\n    firstname\n    lastname\n  }\n}",
+            "variables": "{\n  \"inputData\": {\n    \"login\": \"john_doe23\",\n    \"password\": \"securePassword123\",\n    \"firstname\": \"John\",\n    \"lastname\": \"Doe\"\n  }\n}"
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/graphql",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "graphql"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "graphql",
+          "graphql": {
+            "query": "mutation UpdateExistingEditor($inputData: EditorInput!) {\n  updateEditor(input: $inputData) {\n    id\n    login\n    firstname\n    lastname\n  }\n}",
+            "variables": "{\n  \"inputData\": {\n    \"id\": \"99\",\n    \"login\": \"editor_new_login\",\n    \"password\": \"newSecurePassword123\",\n    \"firstname\": \"Alex\",\n    \"lastname\": \"Sidorov\"\n  }\n}"
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/graphql",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "graphql"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update inline",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "graphql",
+          "graphql": {
+            "query": "mutation {\n  updateEditor(input: {\n    id: \"99\"\n    login: \"editor_new_login\"\n    password: \"newSecurePassword123\"\n    firstname: \"Alex3\"\n    lastname: \"Sidorov\"\n  }) {\n    id\n    login\n    firstname\n    lastname\n  }\n}",
+            "variables": ""
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/graphql",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "graphql"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "graphql",
+          "graphql": {
+            "query": "mutation DeleteEditor($id: ID!) {\n  deleteEditor(id: $id)\n}",
+            "variables": "{\n    \"id\": 686\n}"
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/graphql",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "graphql"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": ""
+    }
+  ]
+}

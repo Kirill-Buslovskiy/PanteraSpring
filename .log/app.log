@@ -1,0 +1,195 @@
+20:36:30 INFO  [background-preinit] Version [, ] - HV000001: Hibernate Validator 8.0.1.Final
+20:36:30 INFO  [main] ApplicationObservability [, ] - Starting ApplicationObservability using Java 21.0.2 with PID 97717 (/Users/akhmelev/IdeaProjects/PanteraSpring/lesson21/target/classes started by akhmelev in /Users/akhmelev/IdeaProjects/PanteraSpring)
+20:36:30 INFO  [main] ApplicationObservability [, ] - No active profile set, falling back to 1 default profile: "default"
+20:36:30 INFO  [main] RepositoryConfigurationDelegate [, ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:36:30 INFO  [main] RepositoryConfigurationDelegate [, ] - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+20:36:31 INFO  [main] TomcatWebServer [, ] - Tomcat initialized with port 8080 (http)
+20:36:31 INFO  [main] Http11NioProtocol [, ] - Initializing ProtocolHandler ["http-nio-8080"]
+20:36:31 INFO  [main] StandardService [, ] - Starting service [Tomcat]
+20:36:31 INFO  [main] StandardEngine [, ] - Starting Servlet engine: [Apache Tomcat/10.1.31]
+20:36:31 INFO  [main] [/] [, ] - Initializing Spring embedded WebApplicationContext
+20:36:31 INFO  [main] ServletWebServerApplicationContext [, ] - Root WebApplicationContext: initialization completed in 1422 ms
+20:36:31 INFO  [main] HikariDataSource [, ] - HikariPool-1 - Starting...
+20:36:31 INFO  [main] HikariPool [, ] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e8c84eb
+20:36:31 INFO  [main] HikariDataSource [, ] - HikariPool-1 - Start completed.
+20:36:31 INFO  [main] LogHelper [, ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:36:31 INFO  [main] Version [, ] - HHH000412: Hibernate ORM core version 6.5.3.Final
+20:36:32 INFO  [main] RegionFactoryInitiator [, ] - HHH000026: Second-level cache disabled
+20:36:32 INFO  [main] SpringPersistenceUnitInfo [, ] - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:36:32 INFO  [main] JtaPlatformInitiator [, ] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20:36:32 INFO  [main] LocalContainerEntityManagerFactoryBean [, ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:36:33 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration [, ] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:36:33 INFO  [main] InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [, ] - Global AuthenticationManager configured with UserDetailsService bean with name authService
+20:36:33 INFO  [main] EndpointLinksResolver [, ] - Exposing 2 endpoints beneath base path '/actuator'
+20:36:34 INFO  [main] Http11NioProtocol [, ] - Starting ProtocolHandler ["http-nio-8080"]
+20:36:34 INFO  [main] TomcatWebServer [, ] - Tomcat started on port 8080 (http) with context path '/'
+20:36:34 INFO  [main] ApplicationObservability [, ] - Started ApplicationObservability in 4.324 seconds (process running for 5.141)
+20:36:34 INFO  [main] ApplicationObservability [, ] - Application started http://localhost:8080
+20:36:34 INFO  [RMI TCP Connection(3)-127.0.0.1] [/] [, ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:36:34 INFO  [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet [, ] - Initializing Servlet 'dispatcherServlet'
+20:36:34 INFO  [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet [, ] - Completed initialization in 3 ms
+20:40:43 INFO  [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean [, ] - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:40:43 INFO  [SpringApplicationShutdownHook] HikariDataSource [, ] - HikariPool-1 - Shutdown initiated...
+20:40:43 INFO  [SpringApplicationShutdownHook] HikariDataSource [, ] - HikariPool-1 - Shutdown completed.
+20:40:48 INFO  [background-preinit] Version [, ] - HV000001: Hibernate Validator 8.0.1.Final
+20:40:48 INFO  [main] ApplicationObservability [, ] - Starting ApplicationObservability using Java 21.0.2 with PID 98538 (/Users/akhmelev/IdeaProjects/PanteraSpring/lesson21/target/classes started by akhmelev in /Users/akhmelev/IdeaProjects/PanteraSpring)
+20:40:48 INFO  [main] ApplicationObservability [, ] - No active profile set, falling back to 1 default profile: "default"
+20:40:49 INFO  [main] RepositoryConfigurationDelegate [, ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:40:49 INFO  [main] RepositoryConfigurationDelegate [, ] - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interface.
+20:40:50 INFO  [main] TomcatWebServer [, ] - Tomcat initialized with port 8080 (http)
+20:40:50 INFO  [main] Http11NioProtocol [, ] - Initializing ProtocolHandler ["http-nio-8080"]
+20:40:50 INFO  [main] StandardService [, ] - Starting service [Tomcat]
+20:40:50 INFO  [main] StandardEngine [, ] - Starting Servlet engine: [Apache Tomcat/10.1.31]
+20:40:50 INFO  [main] [/] [, ] - Initializing Spring embedded WebApplicationContext
+20:40:50 INFO  [main] ServletWebServerApplicationContext [, ] - Root WebApplicationContext: initialization completed in 1322 ms
+20:40:50 INFO  [main] HikariDataSource [, ] - HikariPool-1 - Starting...
+20:40:50 INFO  [main] HikariPool [, ] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46fa2a7e
+20:40:50 INFO  [main] HikariDataSource [, ] - HikariPool-1 - Start completed.
+20:40:50 INFO  [main] LogHelper [, ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:40:50 INFO  [main] Version [, ] - HHH000412: Hibernate ORM core version 6.5.3.Final
+20:40:50 INFO  [main] RegionFactoryInitiator [, ] - HHH000026: Second-level cache disabled
+20:40:50 INFO  [main] SpringPersistenceUnitInfo [, ] - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:40:51 INFO  [main] JtaPlatformInitiator [, ] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20:40:51 INFO  [main] LocalContainerEntityManagerFactoryBean [, ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:40:51 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration [, ] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:40:52 INFO  [main] InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [, ] - Global AuthenticationManager configured with UserDetailsService bean with name authService
+20:40:52 INFO  [main] EndpointLinksResolver [, ] - Exposing 2 endpoints beneath base path '/actuator'
+20:40:52 INFO  [main] Http11NioProtocol [, ] - Starting ProtocolHandler ["http-nio-8080"]
+20:40:52 INFO  [main] TomcatWebServer [, ] - Tomcat started on port 8080 (http) with context path '/'
+20:40:52 INFO  [main] ApplicationObservability [, ] - Started ApplicationObservability in 4.306 seconds (process running for 5.229)
+20:40:52 INFO  [main] ApplicationObservability [, ] - Application started http://localhost:8080
+20:40:53 INFO  [RMI TCP Connection(4)-127.0.0.1] [/] [, ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:40:53 INFO  [RMI TCP Connection(4)-127.0.0.1] DispatcherServlet [, ] - Initializing Servlet 'dispatcherServlet'
+20:40:53 INFO  [RMI TCP Connection(4)-127.0.0.1] DispatcherServlet [, ] - Completed initialization in 1 ms
+20:43:26 INFO  [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean [, ] - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:43:26 INFO  [SpringApplicationShutdownHook] HikariDataSource [, ] - HikariPool-1 - Shutdown initiated...
+20:43:26 INFO  [SpringApplicationShutdownHook] HikariDataSource [, ] - HikariPool-1 - Shutdown completed.
+20:43:46 INFO  [background-preinit] Version [, ] - HV000001: Hibernate Validator 8.0.1.Final
+20:43:46 INFO  [main] ApplicationObservability [, ] - Starting ApplicationObservability using Java 21.0.2 with PID 99070 (/Users/akhmelev/IdeaProjects/PanteraSpring/lesson21/target/classes started by akhmelev in /Users/akhmelev/IdeaProjects/PanteraSpring)
+20:43:46 INFO  [main] ApplicationObservability [, ] - No active profile set, falling back to 1 default profile: "default"
+20:43:46 INFO  [main] RepositoryConfigurationDelegate [, ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:43:46 INFO  [main] RepositoryConfigurationDelegate [, ] - Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+20:43:47 INFO  [main] TomcatWebServer [, ] - Tomcat initialized with port 8080 (http)
+20:43:47 INFO  [main] Http11NioProtocol [, ] - Initializing ProtocolHandler ["http-nio-8080"]
+20:43:47 INFO  [main] StandardService [, ] - Starting service [Tomcat]
+20:43:47 INFO  [main] StandardEngine [, ] - Starting Servlet engine: [Apache Tomcat/10.1.31]
+20:43:47 INFO  [main] [/] [, ] - Initializing Spring embedded WebApplicationContext
+20:43:47 INFO  [main] ServletWebServerApplicationContext [, ] - Root WebApplicationContext: initialization completed in 1222 ms
+20:43:47 INFO  [main] HikariDataSource [, ] - HikariPool-1 - Starting...
+20:43:47 INFO  [main] HikariPool [, ] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31dbf5bb
+20:43:47 INFO  [main] HikariDataSource [, ] - HikariPool-1 - Start completed.
+20:43:47 INFO  [main] LogHelper [, ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:43:47 INFO  [main] Version [, ] - HHH000412: Hibernate ORM core version 6.5.3.Final
+20:43:47 INFO  [main] RegionFactoryInitiator [, ] - HHH000026: Second-level cache disabled
+20:43:48 INFO  [main] SpringPersistenceUnitInfo [, ] - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:43:48 INFO  [main] JtaPlatformInitiator [, ] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20:43:48 INFO  [main] LocalContainerEntityManagerFactoryBean [, ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:43:48 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration [, ] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:43:49 INFO  [main] InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [, ] - Global AuthenticationManager configured with UserDetailsService bean with name authService
+20:43:49 INFO  [main] EndpointLinksResolver [, ] - Exposing 2 endpoints beneath base path '/actuator'
+20:43:49 INFO  [main] Http11NioProtocol [, ] - Starting ProtocolHandler ["http-nio-8080"]
+20:43:49 INFO  [main] TomcatWebServer [, ] - Tomcat started on port 8080 (http) with context path '/'
+20:43:49 INFO  [main] ApplicationObservability [, ] - Started ApplicationObservability in 3.956 seconds (process running for 4.939)
+20:43:49 INFO  [main] ApplicationObservability [, ] - Application started http://localhost:8080
+20:43:50 INFO  [RMI TCP Connection(3)-127.0.0.1] [/] [, ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:43:50 INFO  [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet [, ] - Initializing Servlet 'dispatcherServlet'
+20:43:50 INFO  [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet [, ] - Completed initialization in 2 ms
+20:45:16 INFO  [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean [, ] - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:45:16 INFO  [SpringApplicationShutdownHook] HikariDataSource [, ] - HikariPool-1 - Shutdown initiated...
+20:45:16 INFO  [SpringApplicationShutdownHook] HikariDataSource [, ] - HikariPool-1 - Shutdown completed.
+20:45:18 INFO  [background-preinit] Version [, ] - HV000001: Hibernate Validator 8.0.1.Final
+20:45:18 INFO  [main] ApplicationObservability [, ] - Starting ApplicationObservability using Java 21.0.2 with PID 99338 (/Users/akhmelev/IdeaProjects/PanteraSpring/lesson21/target/classes started by akhmelev in /Users/akhmelev/IdeaProjects/PanteraSpring)
+20:45:18 INFO  [main] ApplicationObservability [, ] - No active profile set, falling back to 1 default profile: "default"
+20:45:19 INFO  [main] RepositoryConfigurationDelegate [, ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:45:19 INFO  [main] RepositoryConfigurationDelegate [, ] - Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
+20:45:20 INFO  [main] TomcatWebServer [, ] - Tomcat initialized with port 8080 (http)
+20:45:20 INFO  [main] Http11NioProtocol [, ] - Initializing ProtocolHandler ["http-nio-8080"]
+20:45:20 INFO  [main] StandardService [, ] - Starting service [Tomcat]
+20:45:20 INFO  [main] StandardEngine [, ] - Starting Servlet engine: [Apache Tomcat/10.1.31]
+20:45:20 INFO  [main] [/] [, ] - Initializing Spring embedded WebApplicationContext
+20:45:20 INFO  [main] ServletWebServerApplicationContext [, ] - Root WebApplicationContext: initialization completed in 1182 ms
+20:45:20 INFO  [main] HikariDataSource [, ] - HikariPool-1 - Starting...
+20:45:20 INFO  [main] HikariPool [, ] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6f17dd06
+20:45:20 INFO  [main] HikariDataSource [, ] - HikariPool-1 - Start completed.
+20:45:20 INFO  [main] LogHelper [, ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:45:20 INFO  [main] Version [, ] - HHH000412: Hibernate ORM core version 6.5.3.Final
+20:45:20 INFO  [main] RegionFactoryInitiator [, ] - HHH000026: Second-level cache disabled
+20:45:20 INFO  [main] SpringPersistenceUnitInfo [, ] - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:45:21 INFO  [main] JtaPlatformInitiator [, ] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20:45:21 INFO  [main] LocalContainerEntityManagerFactoryBean [, ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:45:21 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration [, ] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:45:21 INFO  [main] InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [, ] - Global AuthenticationManager configured with UserDetailsService bean with name authService
+20:45:22 INFO  [main] EndpointLinksResolver [, ] - Exposing 2 endpoints beneath base path '/actuator'
+20:45:22 INFO  [main] Http11NioProtocol [, ] - Starting ProtocolHandler ["http-nio-8080"]
+20:45:22 INFO  [main] TomcatWebServer [, ] - Tomcat started on port 8080 (http) with context path '/'
+20:45:22 INFO  [main] ApplicationObservability [, ] - Started ApplicationObservability in 4.076 seconds (process running for 5.206)
+20:45:22 INFO  [main] ApplicationObservability [, ] - Application started http://localhost:8080
+20:45:23 INFO  [RMI TCP Connection(1)-127.0.0.1] [/] [, ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:45:23 INFO  [RMI TCP Connection(1)-127.0.0.1] DispatcherServlet [, ] - Initializing Servlet 'dispatcherServlet'
+20:45:23 INFO  [RMI TCP Connection(1)-127.0.0.1] DispatcherServlet [, ] - Completed initialization in 2 ms
+20:57:09 INFO  [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean [, ] - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:57:09 INFO  [SpringApplicationShutdownHook] HikariDataSource [, ] - HikariPool-1 - Shutdown initiated...
+20:57:09 INFO  [SpringApplicationShutdownHook] HikariDataSource [, ] - HikariPool-1 - Shutdown completed.
+20:57:14 INFO  [background-preinit] Version [, ] - HV000001: Hibernate Validator 8.0.1.Final
+20:57:14 INFO  [main] ApplicationObservability [, ] - Starting ApplicationObservability using Java 21.0.2 with PID 1770 (/Users/akhmelev/IdeaProjects/PanteraSpring/lesson21/target/classes started by akhmelev in /Users/akhmelev/IdeaProjects/PanteraSpring)
+20:57:14 INFO  [main] ApplicationObservability [, ] - No active profile set, falling back to 1 default profile: "default"
+20:57:15 INFO  [main] RepositoryConfigurationDelegate [, ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:57:15 INFO  [main] RepositoryConfigurationDelegate [, ] - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+20:57:16 INFO  [main] TomcatWebServer [, ] - Tomcat initialized with port 8080 (http)
+20:57:16 INFO  [main] Http11NioProtocol [, ] - Initializing ProtocolHandler ["http-nio-8080"]
+20:57:16 INFO  [main] StandardService [, ] - Starting service [Tomcat]
+20:57:16 INFO  [main] StandardEngine [, ] - Starting Servlet engine: [Apache Tomcat/10.1.31]
+20:57:16 INFO  [main] [/] [, ] - Initializing Spring embedded WebApplicationContext
+20:57:16 INFO  [main] ServletWebServerApplicationContext [, ] - Root WebApplicationContext: initialization completed in 1647 ms
+20:57:16 INFO  [main] HikariDataSource [, ] - HikariPool-1 - Starting...
+20:57:17 INFO  [main] HikariPool [, ] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7a522157
+20:57:17 INFO  [main] HikariDataSource [, ] - HikariPool-1 - Start completed.
+20:57:17 INFO  [main] LogHelper [, ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:57:17 INFO  [main] Version [, ] - HHH000412: Hibernate ORM core version 6.5.3.Final
+20:57:17 INFO  [main] RegionFactoryInitiator [, ] - HHH000026: Second-level cache disabled
+20:57:17 INFO  [main] SpringPersistenceUnitInfo [, ] - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:57:18 INFO  [main] JtaPlatformInitiator [, ] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20:57:18 INFO  [main] LocalContainerEntityManagerFactoryBean [, ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:57:18 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration [, ] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:57:18 INFO  [main] InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [, ] - Global AuthenticationManager configured with UserDetailsService bean with name authService
+20:57:18 INFO  [main] EndpointLinksResolver [, ] - Exposing 2 endpoints beneath base path '/actuator'
+20:57:19 INFO  [main] Http11NioProtocol [, ] - Starting ProtocolHandler ["http-nio-8080"]
+20:57:19 INFO  [main] TomcatWebServer [, ] - Tomcat started on port 8080 (http) with context path '/'
+20:57:19 INFO  [main] ApplicationObservability [, ] - Started ApplicationObservability in 5.071 seconds (process running for 5.993)
+20:57:19 INFO  [main] ApplicationObservability [, ] - Application started http://localhost:8080
+20:57:19 INFO  [RMI TCP Connection(3)-127.0.0.1] [/] [, ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:57:19 INFO  [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet [, ] - Initializing Servlet 'dispatcherServlet'
+20:57:19 INFO  [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet [, ] - Completed initialization in 2 ms
+20:58:56 INFO  [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean [, ] - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:58:56 INFO  [SpringApplicationShutdownHook] HikariDataSource [, ] - HikariPool-1 - Shutdown initiated...
+20:58:56 INFO  [SpringApplicationShutdownHook] HikariDataSource [, ] - HikariPool-1 - Shutdown completed.
+20:58:59 INFO  [background-preinit] Version [, ] - HV000001: Hibernate Validator 8.0.1.Final
+20:58:59 INFO  [main] ApplicationObservability [, ] - Starting ApplicationObservability using Java 21.0.2 with PID 2099 (/Users/akhmelev/IdeaProjects/PanteraSpring/lesson21/target/classes started by akhmelev in /Users/akhmelev/IdeaProjects/PanteraSpring)
+20:58:59 INFO  [main] ApplicationObservability [, ] - No active profile set, falling back to 1 default profile: "default"
+20:58:59 INFO  [main] RepositoryConfigurationDelegate [, ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:58:59 INFO  [main] RepositoryConfigurationDelegate [, ] - Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+20:59:00 INFO  [main] TomcatWebServer [, ] - Tomcat initialized with port 8080 (http)
+20:59:00 INFO  [main] Http11NioProtocol [, ] - Initializing ProtocolHandler ["http-nio-8080"]
+20:59:00 INFO  [main] StandardService [, ] - Starting service [Tomcat]
+20:59:00 INFO  [main] StandardEngine [, ] - Starting Servlet engine: [Apache Tomcat/10.1.31]
+20:59:00 INFO  [main] [/] [, ] - Initializing Spring embedded WebApplicationContext
+20:59:00 INFO  [main] ServletWebServerApplicationContext [, ] - Root WebApplicationContext: initialization completed in 1306 ms
+20:59:00 INFO  [main] HikariDataSource [, ] - HikariPool-1 - Starting...
+20:59:01 INFO  [main] HikariPool [, ] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70f5f57d
+20:59:01 INFO  [main] HikariDataSource [, ] - HikariPool-1 - Start completed.
+20:59:01 INFO  [main] LogHelper [, ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:59:01 INFO  [main] Version [, ] - HHH000412: Hibernate ORM core version 6.5.3.Final
+20:59:01 INFO  [main] RegionFactoryInitiator [, ] - HHH000026: Second-level cache disabled
+20:59:01 INFO  [main] SpringPersistenceUnitInfo [, ] - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:59:02 INFO  [main] JtaPlatformInitiator [, ] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20:59:02 INFO  [main] LocalContainerEntityManagerFactoryBean [, ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:59:02 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration [, ] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:59:02 INFO  [main] InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [, ] - Global AuthenticationManager configured with UserDetailsService bean with name authService
+20:59:02 INFO  [main] EndpointLinksResolver [, ] - Exposing 2 endpoints beneath base path '/actuator'
+20:59:03 INFO  [main] Http11NioProtocol [, ] - Starting ProtocolHandler ["http-nio-8080"]
+20:59:03 INFO  [main] TomcatWebServer [, ] - Tomcat started on port 8080 (http) with context path '/'
+20:59:03 INFO  [main] ApplicationObservability [, ] - Started ApplicationObservability in 4.572 seconds (process running for 5.715)
+20:59:03 INFO  [main] ApplicationObservability [, ] - Application started http://localhost:8080
+20:59:03 INFO  [RMI TCP Connection(3)-127.0.0.1] [/] [, ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:59:03 INFO  [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet [, ] - Initializing Servlet 'dispatcherServlet'
+20:59:03 INFO  [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet [, ] - Completed initialization in 2 ms

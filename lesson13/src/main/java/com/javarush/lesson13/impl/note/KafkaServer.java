@@ -40,8 +40,12 @@ public class KafkaServer {
             case CREATE -> List.of(noteService.create(noteRequestTo, Locale.getDefault()));
             case UPDATE -> List.of(noteService.update(noteRequestTo));
             case REMOVE_BY_ID -> {
-                noteService.removeById(noteEvent.idData());
-                yield List.of();
+                try {
+                    noteService.removeById(noteEvent.idData());
+                    yield List.of();
+                } catch (Exception e) {
+                    yield List.of(new NoteResponseTo(noteEvent.idData(),-1L,"No such note"));
+                }
             }
         };
         NoteEvent result = new NoteEvent(noteResponseTos);
