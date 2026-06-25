@@ -193,3 +193,6 @@
 20:59:03 INFO  [RMI TCP Connection(3)-127.0.0.1] [/] [, ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 20:59:03 INFO  [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet [, ] - Initializing Servlet 'dispatcherServlet'
 20:59:03 INFO  [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet [, ] - Completed initialization in 2 ms
+21:46:47 INFO  [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean [, ] - Closing JPA EntityManagerFactory for persistence unit 'default'
+21:46:47 INFO  [SpringApplicationShutdownHook] HikariDataSource [, ] - HikariPool-1 - Shutdown initiated...
+21:46:47 INFO  [SpringApplicationShutdownHook] HikariDataSource [, ] - HikariPool-1 - Shutdown completed.
