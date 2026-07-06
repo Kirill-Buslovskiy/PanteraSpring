@@ -1,0 +1,20 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: lesson23
+  cloud:
+    config:
+      server:
+      #  native:
+      #    search-locations: file:///Users/akhmelev/IdeaProjects/PanteraSpring/.cfg/config/{profile}/{application}
+        git:
+          uri: https://github.com/demologin/PanteraSpring
+          clone-on-start: true
+          search-paths:
+            - '.cfg/config/{profile}/{application}'
+            # check here http://admin:pass@localhost:8765/lesson19-dev.yaml
+  security:
+    user:
+      name: admin
+      password: pass
