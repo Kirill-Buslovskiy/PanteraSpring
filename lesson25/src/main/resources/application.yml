@@ -1,0 +1,20 @@
+server:
+  port: 80
+spring:
+  application:
+    name: lesson25
+  cloud:
+    gateway:
+      routes:
+        - id: lesson19-route-mysite
+#          uri: http://127.0.0.1:8080
+          uri: lb://lesson19
+          predicates:
+            - Host=lesson19.mysite.com,lesson19**.nip.io,**.nip.io
+          filters:
+            - PreserveHostHeader
+eureka:
+  client:
+    service-url:
+      defaultZone: http://host.docker.internal:8761/eureka/
+    register-with-eureka: false
